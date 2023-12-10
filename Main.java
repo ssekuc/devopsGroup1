@@ -108,7 +108,7 @@ class Hotel
         name2 = sc.next();
         System.out.print("Enter contact number with area code: ");
         contact2=sc.next();
-        System.out.print("Enter gender: ");
+        System.out.print("Enter gender Details With proper Information: ");
         gender2 = sc.next();
         }      
         
