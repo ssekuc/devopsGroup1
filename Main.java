@@ -226,7 +226,8 @@ class Hotel
         }
         System.out.println("Room Booked");
     }
-    
+
+    // Features
     static void features(int i)
     {
         switch (i) {
