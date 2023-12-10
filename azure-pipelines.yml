@@ -1,0 +1,33 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+ 
+pool:
+  vmImage: 'ubuntu-latest'
+ 
+steps:
+- checkout: self
+ 
+# Compile application
+- script: |
+    javac src/*.java
+  displayName: 'Compile Java Code'
+ 
+# Run application
+- script: |
+    java -cp src/ Main
+  displayName: 'Run Java Application'
+ 
+# Compile tests
+- script: |
+    javac -cp src/ test/*.java
+  displayName: 'Compile Java Tests'
+ 
+# Run tests
+- script: |
+    java -cp test/ TestRunner
+  displayName: 'Run Java Tests'
