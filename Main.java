@@ -383,10 +383,10 @@ class Hotel
                     System.out.println("Room used by "+hotel_ob.deluxe_doublerrom[rn].name);
                 else
                 {
-                    System.out.println("Empty Already");
+                    System.out.println("Already Empty");
                         return;
                 }
-                System.out.println(" Do you want to checkout ?(y/n)");
+                System.out.println(" Do you want to checkout ? (y/n)");
                  w=sc.next().charAt(0);
                 if(w=='y'||w=='Y')
                 {
