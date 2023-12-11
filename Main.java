@@ -278,7 +278,7 @@ class Hotel
                 }
                 break;
             default:
-                System.out.println("Enter valid option");
+                System.out.println("Please enter valid option");
                 break;
         }
         System.out.println("Number of rooms available : "+count);
@@ -365,10 +365,10 @@ class Hotel
                     System.out.println("Room used by "+hotel_ob.luxury_doublerrom[rn].name);
                 else
                 {
-                    System.out.println("Empty Already");
+                    System.out.println("Already Empty");
                         return;
                 }
-                System.out.println("Do you want to checkout ?(y/n)");
+                System.out.println("Do you want to checkout ? (y/n)");
                  w=sc.next().charAt(0);
                 if(w=='y'||w=='Y')
                 {
@@ -497,8 +497,8 @@ class write implements Runnable
     @Override
     public void run() {
           try{
-        FileOutputStream fout=new FileOutputStream("backup");
-        ObjectOutputStream oos=new ObjectOutputStream(fout);
+        FileOutputStream fout = new FileOutputStream("backup");
+        ObjectOutputStream oos = new ObjectOutputStream(fout);
         oos.writeObject(hotel_ob);
         }
         catch(Exception e)
