@@ -130,7 +130,7 @@ class Hotel
     {
         int j;
         int rn;
-        System.out.println("\nChoose room number from : ");
+        System.out.println("\nPlease choose room number from : ");
         switch (i) {
             case 1:
                 for(j=0;j<hotel_ob.luxury_doublerrom.length;j++)
@@ -140,7 +140,7 @@ class Hotel
                         System.out.print(j+1+",");
                     }
                 }
-                System.out.print("\nEnter room number: ");
+                System.out.print("\nPlease enter room number: ");
                 try{
                 rn=sc.nextInt();
                 rn--;
@@ -374,7 +374,7 @@ class Hotel
                 {
                     bill(rn,rtype);
                     hotel_ob.luxury_doublerrom[rn]=null;
-                    System.out.println("Deallocated succesfully");
+                    System.out.println("Deallocated successfully");
                 }
 
                 break;
@@ -392,7 +392,7 @@ class Hotel
                 {
                     bill(rn,rtype);
                     hotel_ob.deluxe_doublerrom[rn]=null;
-                    System.out.println("Deallocated succesfully");
+                    System.out.println("Deallocated successfully");
                 }
 
                 break;
@@ -410,7 +410,7 @@ class Hotel
                 {
                     bill(rn,rtype);
                     hotel_ob.luxury_singleerrom[rn]=null;
-                    System.out.println("Deallocated succesfully");
+                    System.out.println("Deallocated successfully");
                 }
 
                 break;
@@ -428,7 +428,7 @@ class Hotel
                 {
                     bill(rn,rtype);
                     hotel_ob.deluxe_singleerrom[rn]=null;
-                    System.out.println("Deallocated succesfully");
+                    System.out.println("Deallocated successfully");
                 }
                 break;
             default:
